@@ -1,0 +1,108 @@
+﻿<aquabrowser version="0">
+  <meta>
+    <count>1</count>
+    <page>1</page>
+    <rctx>AWNkYOZmYGcwLMhMMs0tN67ISsw0yc7MSc8rNC7MqDI2YWZk4MxNzMxjYGaQtjS3sDQwMjM0tDQxNUblMTJLZ8YXpSYXF6QWFSSmp7IaGTAxPFjI8uA1ExAxNcxlZdSYMoGRkYGBvSopiYGBQV$@KD$@RD8ns7A0M0U@KTMpL7VEHyjFXlqUw8Cal8MIAA==</rctx>
+  </meta>
+  <results>
+    <result>
+      <id nativeid="8385303" ds="library/m/vlacc">|library/marc/vlacc|8385303</id>
+      <detail-page>http://zoeken.bibliotheek.be/detail/Roald-Dahl/De-reuzenperzik/Boek/?itemid=%7clibrary%2fmarc%2fvlacc%7c8385303</detail-page>
+      <copyright xmlns:bibnet="http://www.medialab.nl/schemas/aquabrowser/library/customers/bibnet">
+            Op de metadata (titelbeschrijvingen) en metacontent (covers, samenvattingen, recensies enz.) aangeboden in de API berusten intellectuele eigendomsrechten en databankrechten, zie http://www.cultuurconnect.be/diensten/bibliotheekportalen/open-data. De API mag enkel worden gebruikt in functie van de opdracht van de openbare bibliotheek.
+         </copyright>
+      <coverimage>
+        <url>https://webservices.bibliotheek.be/index.php?func=cover&amp;ISBN=9789026119453&amp;VLACCnr=8385303&amp;CDR=&amp;EAN=&amp;ISMN=&amp;coversize=small</url>
+      </coverimage>
+      <coverimages>
+        <coverimage>
+          <url>https://webservices.bibliotheek.be/index.php?func=cover&amp;ISBN=9789026119453&amp;VLACCnr=8385303&amp;CDR=&amp;EAN=&amp;ISMN=&amp;coversize=small</url>
+        </coverimage>
+      </coverimages>
+      <titles>
+        <title>De reuzenperzik</title>
+        <short-title>De reuzenperzik</short-title>
+        <origin-title>James and the giant peach</origin-title>
+      </titles>
+      <authors>
+        <main-author type="aut" localized-type="Auteur" creatortype="person" main="true">Dahl, Roald</main-author>
+        <author type="ill" localized-type="Illustrator" creatortype="person">Blake, Quentin</author>
+      </authors>
+      <formats>
+        <format>book</format>
+      </formats>
+      <types>
+        <type>Fictie</type>
+      </types>
+      <identifiers xmlns:bibnet="http://www.medialab.nl/schemas/aquabrowser/library/customers/bibnet">
+        <isbn-id note="paperback">9789026119453</isbn-id>
+      </identifiers>
+      <publication>
+        <publishers>
+          <publisher year="2012" place="Baarn">De Fontein</publisher>
+        </publishers>
+        <editions>
+          <edition>45</edition>
+        </editions>
+      </publication>
+      <languages>
+        <language>dut</language>
+        <original-language>eng</original-language>
+      </languages>
+      <subjects>
+        <topical-subject>Toveren</topical-subject>
+      </subjects>
+      <genres>
+        <genre>Humor</genre>
+      </genres>
+      <description>
+        <physical-description>159 p. : ill.</physical-description>
+      </description>
+      <summaries>
+        <summary source-name="vlacc">James woont bij zijn gemene tantes. Op een dag krijgt hij van een oud mannetje een zakje toverkracht. James laat het zakje vallen naast een perzikboom, met een reusachtige perzik als gevolg. James kruipt naar binnen, sluit vriendschap met de inwoners en beleeft allerlei avonturen.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insekten een avontuurlijke reis te maken.</summary>
+        <summary source-name="nbd">James Henry Trotter heeft geen ouders meer. Door zijn tantes wordt hij erg wreed behandeld. Hij weet niet wat hem overkomt als er een reusachtige perzik groeit, waarin hij kan ontsnappen om met hele grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James is wees. Zijn tantes behandelen hem erg wreed. Als er een reusachtige perzik groeit, kan daarin ontsnappen om met heel grote insecten een avontuurlijke reis te maken. Vanaf ca. 9 jaar.</summary>
+        <summary source-name="nbd">James is wees. Zijn tantes behandelen hem erg wreed. Als er een reusachtige perzik groeit, kan hij daarin ontsnappen om met heel grote insecten een avontuurlijke reis te maken. Voorlezen vanaf ca. 7 jaar, zelf lezen vanaf ca. 9 jaar.</summary>
+      </summaries>
+      <notes>
+        <contents-note />
+      </notes>
+      <target-audiences>
+        <target-audience>age9-11</target-audience>
+        <target-audience>ageYouth</target-audience>
+      </target-audiences>
+      <series>
+        <series-title>De fantastische bibliotheek van Roald Dahl</series-title>
+      </series>
+      <custom>
+        <bibnet xmlns:bibnet="http://www.medialab.nl/schemas/aquabrowser/library/customers/bibnet">
+          <roserank>810</roserank>
+          <frabl count="45" workid="70F2DF483B" key1="james and the giant peach" key2="dahl,roald" material="zbbBook" language="dut">70F2DF483BF1ACA0</frabl>
+          <holdings-count>18</holdings-count>
+        </bibnet>
+      </custom>
+    </result>
+  </results>
+  <facets>
+    <facet id="pubYearRange">
+      <value count="1" id="1_2010" />
+      <value count="1" id="2_2000" />
+    </facet>
+  </facets>
+  <sort>
+    <option id="relevance" active="true" />
+    <option id="year" />
+    <option id="title" />
+    <option id="author" />
+  </sort>
+</aquabrowser>
