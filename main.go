@@ -6,6 +6,7 @@ import (
 	"golang.org/x/crypto/acme/autocert"
 
 	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 	"github.com/meyskens/readmyage-api/config"
 )
 
@@ -15,6 +16,7 @@ func main() {
 	conf = config.GetConfig()
 
 	e := echo.New()
+	e.Use(middleware.CORS())
 	e.GET("/", serveRoot)
 	e.GET("/lookup/isbn", servelLookupISBN)
 
