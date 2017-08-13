@@ -18,14 +18,9 @@ func GetConfig() Config {
 	returnConfig := Config{}
 
 	data, err := os.Open("config.json")
-	if err != nil {
-		panic(err)
-	}
-
-	jsonParser := json.NewDecoder(data)
-	err = jsonParser.Decode(&returnConfig)
-	if err != nil {
-		panic(err)
+	if err == nil {
+		jsonParser := json.NewDecoder(data)
+		err = jsonParser.Decode(&returnConfig)
 	}
 
 	port := os.Getenv("PORT")
