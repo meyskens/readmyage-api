@@ -27,5 +27,10 @@ func GetConfig() Config {
 	if err != nil {
 		panic(err)
 	}
+
+	port := os.Getenv("PORT")
+	if port != "" {
+		returnConfig.Bind = ":" + port
+	}
 	return returnConfig
 }

@@ -1,0 +1,5 @@
+{
+  "name": "ReadMyAge",
+  "description": "ReadMyAge API server",
+  "image": "heroku/go:1.9"
+}
