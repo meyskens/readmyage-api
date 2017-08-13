@@ -2,10 +2,8 @@
 FROM golang:1.9-alpine
 
 # Install python and pip
-ADD ./ /opt/readmyage
+ADD ./ /go/src/github.com/meyskens/readmyage-api
 
-RUN cd /opt/readmyage && go build ./
+RUN cd /go/src/github.com/meyskens/readmyage-api && go install
 
-WORKDIR /opt/readmyage
-
-CMD ./readmyage
+CMD /go/bin/readmyage-api
