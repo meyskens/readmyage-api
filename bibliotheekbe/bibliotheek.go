@@ -21,8 +21,13 @@ func Search(term string) (SearchResponse, error) {
 	if err != nil {
 		return res, err
 	}
-
 	err = xml.Unmarshal(resp.Body(), &res)
+
+	for i := range res.Result {
+		for j := range res.Result[i].TargetAudiences {
+			res.Result[i].TargetAudiences[j] = getAudience(res.Result[i].TargetAudiences[j])
+		}
+	}
 
 	return res, err
 }
