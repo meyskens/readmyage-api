@@ -47,6 +47,9 @@ func serveRoot(c echo.Context) error {
 
 func servelLookupISBN(c echo.Context) error {
 	isbn := c.QueryParam("isbn")
+	if isbn == "" {
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "please specify an ISBN number"})
+	}
 
 	done := make(chan bool)
 	in := make(chan LookUpResult)
