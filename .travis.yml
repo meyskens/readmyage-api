@@ -1,0 +1,18 @@
+sudo: required
+
+language: go
+go:
+  - 1.9
+
+services:
+  - docker
+
+script:
+  - go test bibliotheekbe/*.go
+  - docker build -t registry.heroku.com/readmyage-api/web ./
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.heroku.com;
+    docker push registry.heroku.com/readmyage-api/web;
+    fi
