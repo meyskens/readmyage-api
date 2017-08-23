@@ -72,7 +72,7 @@ func servelLookupISBN(c echo.Context) error {
 }
 
 func logQuery(isbn string, results int) { // keeping a database of ISBNs during testing to test new data sets
-	rows, err := db.Query("SELECT COUNT(*) as count FROM  lokup where isbn=$1", isbn)
+	rows, err := db.Query("SELECT COUNT(*) as count FROM  lookup where isbn=$1", isbn)
 	if err != nil {
 		return
 	}
