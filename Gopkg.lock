@@ -26,6 +26,12 @@
   version = "0.2.2"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/lib/pq"
+  packages = [".","oid"]
+  revision = "e42267488fe361b9dc034be7a6bffef5b195bceb"
+
+[[projects]]
   name = "github.com/mattn/go-colorable"
   packages = ["."]
   revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
@@ -94,6 +100,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4de59b7a3096f65ac52284a5a5e07c3ee048c47d67893392d1c8f2f409cfc98f"
+  inputs-digest = "77d735d971c3ffe4e573b2f88f6538a840f5ef448ffd9552a671a879342d0611"
   solver-name = "gps-cdcl"
   solver-version = 1
