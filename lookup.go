@@ -1,7 +1,10 @@
 package main
 
-import "github.com/meyskens/readmyage-api/bibliotheekbe"
-import "strings"
+import (
+	"strings"
+
+	"github.com/meyskens/readmyage-api/bibliotheekbe"
+)
 
 func lookUpBibliotheek(isbn string, result chan bool, out chan LookUpResult) {
 	res, err := bibliotheekbe.Search(isbn)

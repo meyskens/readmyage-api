@@ -1,19 +1,31 @@
 package main
 
 import (
+	"log"
 	"net/http"
+	"os"
 
 	"golang.org/x/crypto/acme/autocert"
 
+	"database/sql"
+
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	_ "github.com/lib/pq"
 	"github.com/meyskens/readmyage-api/config"
 )
 
 var conf config.Config
+var db *sql.DB
 
 func main() {
 	conf = config.GetConfig()
+
+	var err error
+	db, err = sql.Open("postgres", os.Getenv("DATABASE_URL"))
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	e := echo.New()
 	e.Use(middleware.CORS())
@@ -51,5 +63,11 @@ func servelLookupISBN(c echo.Context) error {
 		}
 	}
 
+	go logQuery(isbn, len(response.Results))
+
 	return c.JSON(http.StatusOK, response)
+}
+
+func logQuery(isbn string, results int) { // keeping a database of ISBNs during testing to test new data sets
+	db.Exec("INSERT INTO lookup (isbn, results) VALUES ($1, $2)", isbn, results)
 }
