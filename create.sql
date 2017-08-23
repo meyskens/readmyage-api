@@ -1,5 +1,5 @@
 CREATE TABLE lookup(
-   id INT PRIMARY KEY     NOT NULL,
+   id             SERIAL PRIMARY KEY,
    isbn           TEXT    NOT NULL,
    results        INT     NOT NULL
 );
