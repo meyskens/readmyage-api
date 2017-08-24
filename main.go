@@ -80,6 +80,7 @@ func logQuery(isbn string, results int) { // keeping a database of ISBNs during 
 	var c int
 	rows.Next()
 	rows.Scan(&c)
+	rows.Close()
 
 	if c <= 0 {
 		db.Exec("INSERT INTO lookup (isbn, results) VALUES ($1, $2)", isbn, results)
