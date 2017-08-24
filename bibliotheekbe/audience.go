@@ -6,6 +6,7 @@ var audienceMapping = map[string]string{
 	"age6-8":   "ages 6-8",
 	"age9-11":  "ages 9-11",
 	"age12-14": "ages 12-14",
+	"ageAll":   "all ages",
 	"ageYouth": "youth",
 }
 
