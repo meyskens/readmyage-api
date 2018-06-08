@@ -1,7 +1,9 @@
 #Grab the latest alpine image
-FROM golang:1.9-alpine
+FROM arm64v8/golang:1.9-alpine
 
-# Install python and pip
+ARG QEMU_ARCH
+COPY qemu-${QEMU_ARCH}-static /usr/bin/
+
 ADD ./ /go/src/github.com/meyskens/readmyage-api
 
 RUN cd /go/src/github.com/meyskens/readmyage-api && go install

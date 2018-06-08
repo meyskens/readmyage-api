@@ -4,12 +4,26 @@ language: go
 go:
   - 1.x
 
+env:
+    global:
+      - QEMU_VER=v2.9.1
+    matrix:
+      - ARCH=arm64 ARCHREPO=arm64v8 QEMU_ARCH=aarch64
 services:
   - docker
 
+before_install:
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  - sudo apt-get update
+  - sudo apt-get -y install docker-ce
+  - sudo apt-get -y install qemu qemu-user-static qemu-user binfmt-support
+  - docker run --rm --privileged multiarch/qemu-user-static:register
 script:
+  - wget -N https://github.com/multiarch/qemu-user-static/releases/download/$QEMU_VER/x86_64_qemu-${QEMU_ARCH}-static.tar.gz
+  - tar -xvf x86_64_qemu-${QEMU_ARCH}-static.tar.gz
   - go test bibliotheekbe/*.go
-  - docker build -t maartje/readmyage-api ./
+  - docker build -t maartje/readmyage-api --build-arg QEMU_ARCH="$QEMU_ARCH" ./
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
