@@ -4,6 +4,8 @@ FROM arm64v8/golang:1.9-alpine
 ARG QEMU_ARCH
 COPY qemu-${QEMU_ARCH}-static /usr/bin/
 
+RUN apt update && apt -y install build-essential
+
 ADD ./ /go/src/github.com/meyskens/readmyage-api
 
 RUN cd /go/src/github.com/meyskens/readmyage-api && go install
